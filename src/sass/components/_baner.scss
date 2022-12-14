@@ -1,6 +1,6 @@
 .baner{
    margin: 74px auto 100px;
-   width: 1210px;
+   max-width: 1210px;
    height: 515px;
    background-image: url('../img/for-parents.png');
    border-radius: 12px;
@@ -30,6 +30,11 @@
       justify-content: space-evenly;
       margin-top: 120px;
       margin-bottom: 31px;
+      @media screen and (max-width: 768px) {
+         display: flex;
+         flex-direction: column;
+         max-width: 100%;
+      }
 
       .items{
          max-width: 352px;
@@ -40,9 +45,22 @@
          background-image: url('../img/baner-arrow-white.svg');
          background-repeat: no-repeat;
          background-position: 95% 19%;
+         transition: 0.3s;
+         @media screen and (max-width: 1200px) {
+            margin-right: 20px;
+            padding-right: 15px;
+            :last-child{
+               margin-right: 0;
+            }
+         }
+         @media screen and (max-width: 992px) {
+            padding-right: 20px;
+         }
          &:hover{
             cursor: pointer;
             background-image: url('../img/baner-arrow-blue.svg');
+            background-position: 97% 19%;
+            transition: 0.3s;
             background-color: #fff;
             color: #1E3173;
          }
@@ -53,6 +71,10 @@
             line-height: 24px;
             margin-top: 18px;
             margin-left: 23px;
+            @media screen and (max-width: 992px) {
+               padding-right: 25px;
+               font-size: 18px;
+            }
          }
 
          p{
@@ -61,6 +83,9 @@
             margin-top: 17px;
             margin-bottom: 23px;
             margin-left: 23px;
+            @media screen and (max-width: 992px) {
+               font-size: 12px;
+            }
          }
       }
    }
