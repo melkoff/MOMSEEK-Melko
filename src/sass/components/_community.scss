@@ -1,0 +1,163 @@
+.community {
+
+   &__title {
+      font-family: "Raleway";
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 100%;
+      color: #000;
+      margin-bottom: 10px;
+   }
+
+   &__describe {
+      font-family: "Raleway";
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 100%;
+      color: #000;
+   }
+
+   &__info {
+      .line {
+         width: 90%;
+         height: 3px;
+         background-color: #1e3173;
+         margin-top: 40px;
+         margin-bottom: 16px;
+      }
+
+      .community__info-title {
+         font-family: "Raleway";
+         font-weight: 700;
+         font-size: 28px;
+         line-height: 100%;
+         color: #000;
+
+         @media screen and(max-width:500px) {
+            font-weight: 600;
+            font-size: 20px;
+         }
+      }
+      .community__info-date {
+         font-family: "Roboto";
+         font-weight: 400;
+         font-size: 14px;
+         line-height: 120%;
+         color: #000;
+         margin-top: 30px;
+         @media screen and(max-width:992px) {
+            margin-top: 10px;
+         }
+      }
+
+      .community__info-questions {
+         font-family: "Roboto";
+         font-weight: 600;
+         font-size: 22px;
+         line-height: 120%;
+         color: #1e3173;
+         padding-right: 20px;
+         cursor: pointer;
+         &:hover {
+            color: #8392ce;
+            transition: 0.4s;
+         }
+         @media screen and(max-width:992px) {
+            font-weight: 500;
+            font-size: 18px;
+         }
+      }
+      .community__info-text {
+         font-family: "Raleway";
+         font-weight: 500;
+         font-size: 16px;
+         line-height: 120%;
+         color: #000;
+         margin-top: 30px;
+         padding: 0px 60px 0px 16px;
+         @media screen and(max-width:992px) {
+            display: none;
+         }
+      }
+
+      .community__info-item {
+         display: flex;
+         align-items: center;
+         margin: 30px 0px 40px;
+         @media screen and (max-width: 1094px) {
+            flex-wrap: wrap;
+         }
+         .item-name {
+            padding-left: 10px;
+            font-family: "Raleway";
+            font-weight: 800;
+            font-size: 16px;
+            line-height: 120%;
+            color: #1e3173;
+            white-space: nowrap;
+            cursor: pointer;
+         }
+         .item-top {
+            padding: 0px 18px 0px 12px;
+            font-family: "Raleway";
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 120%;
+            color: #000;
+            white-space: nowrap;
+         }
+
+         .item-description {
+            font-family: "Raleway";
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 120%;
+            text-decoration-line: underline;
+            color: #000;
+            cursor: pointer;
+            &:hover {
+               color: #a8a6a6;
+            }
+
+            @media screen and (max-width: 1094px) {
+               margin-top: 10px;
+            }
+         }
+      }
+   }
+   &__btn {
+      margin: 60px 100px;
+      background-image: url("../img/community-arrow-blue.svg");
+      background-repeat: no-repeat;
+      background-position: 85%;
+      transition: 0.3s;
+      &:hover {
+         background-position: 87%;
+         transition: 0.3s;
+      }
+      a {
+         font-family: "Roboto";
+         font-style: normal;
+         font-weight: 600;
+         font-size: 22px;
+         line-height: 100%;
+         padding: 16px 80px;
+         border: 2px solid #1e3173;
+         border-radius: 32px;
+         display: flex;
+         align-items: center;
+         text-align: center;
+         color: #1e3173;
+         text-decoration: none;
+         &:hover {
+            box-shadow: 0 0 10px #324ba5, 0 0 20px #324ba5, 0 0 40px #324ba5;
+            transform: scale(1.02);
+            transition: 0.3s;
+         }
+
+         @media screen and(max-width:768px) {
+            font-size: 18px;
+         }
+      }
+   }
+}

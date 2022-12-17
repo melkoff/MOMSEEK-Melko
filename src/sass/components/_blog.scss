@@ -1,0 +1,122 @@
+.blog {
+   overflow-x: hidden;
+   background: linear-gradient(102.5deg, #fff6da 0%, #ffdef2 100%);
+   padding: 64px 100px;
+   &__title {
+      font-family: "Raleway";
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 100%;
+   }
+   &__menu {
+      padding: 14px 0 46px;
+      :nth-child(2) {
+         white-space: nowrap;
+      }
+
+      ul {
+         @media screen and(max-width:450px) {
+            display: flex;
+            flex-wrap: wrap;
+         }
+         li {
+            padding-right: 26px;
+            list-style: none;
+            @media screen and(max-width:450px) {
+               margin-top: 6px;
+            }
+            a {
+               text-decoration: none;
+               font-family: "Roboto";
+               font-weight: 400;
+               font-size: 16px;
+               line-height: 1.2;
+               color: #1e3173;
+               transition: 0.3s;
+               &:hover {
+                  color: #ffffff;
+                  background-color: #1e3173;
+                  border-radius: 24px;
+                  padding: 5px 20px;
+                  transform: scale(1.08);
+                  transition: 0.3s;
+               }
+            }
+         }
+      }
+   }
+   .onmobile {
+      @media screen and(max-width:600px) {
+         width: 100%;
+      }
+   }
+   .mobile {
+      @media screen and(max-width:600px) {
+         display: none;
+      }
+   }
+}
+
+.blog__img {
+   padding-bottom: 26px;
+   img {
+      width: 100%;
+      border-radius: 14px;
+      transition: 0.3s;
+      &:hover {
+         cursor: pointer;
+         transform: scale(1.08);
+         transition: 0.3s;
+      }
+   }
+}
+.blog__describe {
+   font-family: "Raleway";
+   font-weight: 700;
+   font-size: 24px;
+   line-height: 1.2;
+}
+
+.blog__date {
+   font-family: "Raleway";
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 16px;
+   padding-bottom: 22px;
+   color: #aaaaaa;
+}
+
+.blog__buttons {
+   a {
+      text-decoration: none;
+      font-family: "Raleway";
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+      padding: 6px 14px;
+      border: 1px solid #1e3173;
+      border-radius: 20px;
+      color: #1e3173;
+      transition: 0.3s;
+      &:hover {
+         color: #1e3173;
+         font-weight: 700;
+         font-size: 18px;
+         transform: scale(1.08);
+         transition: 0.3s;
+      }
+   }
+   :last-child {
+      margin-left: 12px;
+      @media screen and(max-width:826px) {
+         margin-left: 0;
+         margin-top: 10px;
+      }
+   }
+
+   @media screen and(max-width:826px) {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+   }
+}
